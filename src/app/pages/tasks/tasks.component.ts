@@ -22,9 +22,11 @@ export class TasksComponent implements OnInit {
   ];
 
   readonly actions: PoPageDynamicTableActions = {
-    new: '/documentation/po-page-dynamic-edit',
+    new: '/tasks-form/',
+    // '/documentation/po-page-dynamic-edit',
     remove: true,
-    removeAll: true
+    // removeAll: true
+    edit: '/tasks-form/:id/'
   };
 
   constructor(
